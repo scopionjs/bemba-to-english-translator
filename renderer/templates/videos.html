@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/videos.css">
+<title>hidden videos</title>
+    
+</head>
+<body>
+   
+    <nav class="frame" >
+        <div onclick="minimize()" class="minimize" >
+            <div></div>
+        </div>
+        <div onclick="maximize()" class="maximize" >
+            <div class="box1" ></div>
+        </div>
+        <div onclick="close()" class="close" >
+            <section>
+            <div class="line1" ></div>
+            <div class="line2" ></div>
+            </section>
+        </div>
+      </nav>
+
+         <div class="main-container" >
+            <div class="left-bar" >
+                <div class="main-loader-wrapper hide" >
+                    <p>preparing your hidden videos</p>
+                    <div class="loader1" >
+                        
+                        <section></section>
+                    </div>
+                </div>
+
+                <div class="hide-pop-up  hide" >
+
+                    <div class="step1 " >
+
+                    <div class="box1" >
+
+                        <div onclick="minimize_modal()"  class="minimize" >
+                            <div></div>
+                        </div>
+
+                        <div  class="close" >
+                            <section>
+                            <div class="line1" ></div>
+                            <div class="line2" ></div>
+                            </section>
+                        </div>
+
+                    </div>
+                    
+                    <div class="box2" >
+                        <p>scanning your selected file </p>
+                        <div class="loader1" >
+                            <section></section>
+                        </div>
+                    </div>
+
+                    <div class="box3" >
+
+                        <div class="initial" >
+
+                            <div class="left" ></div>
+                            <div class="right" >
+                                <p></p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    </div>
+
+                    <div class="step2 " >
+                        <div class="box1" >
+
+                                <div onclick="minimize_modal()"  class="minimize" >
+                                    <div></div>
+                                </div>
+        
+                                <div  class="close" >
+                                    <section>
+                                    <div class="line1" ></div>
+                                    <div class="line2" ></div>
+                                    </section>
+                                </div>
+                        </div>
+                        <div class="box2" >
+
+                            <div class="initial" >
+
+                                <div class="left" >
+                                    <img src=""  alt="">
+                                </div>
+                                <div class="right" >
+                                    <p>texts</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="box3" >
+                            <section>
+                                <p>choose the hiding criteria to be use</p>
+                            </section>
+                            <div>
+                                <button>deep hide</button>
+                                <button>slight hide</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step3  hide" >
+                        <div class="box1" >
+
+                            <div onclick="minimize_modal()"  class="minimize" >
+                                <div></div>
+                            </div>
+    
+                            <div  class="close" >
+                                <section>
+                                <div class="line1" ></div>
+                                <div class="line2" ></div>
+                                </section>
+                            </div>
+
+                        </div>
+                        <div class="box2" >
+                            <p class="txt1" >hiding your video</p>
+                            <div class="loader1" >
+                                <section></section>
+                            </div>
+                            <p class="txt2" >please do not disturb this operation</p>
+                        </div>
+                    </div>
+                    <div class="step4  hide" >
+                        <div class="box1" >
+
+                            <div onclick="minimize_modal()"  class="minimize" >
+                                <div></div>
+                            </div>
+    
+                            <div  class="close" >
+                                <section>
+                                <div class="line1" ></div>
+                                <div class="line2" ></div>
+                                </section>
+                            </div>
+
+                        </div>
+
+                        <div class="box2" >
+                            <img src="../assets/done.png" alt="">
+                            <p>hidden succesfully</p>
+                            <button>okay!</button>
+                        </div>
+                    </div>
+                    <div class="step5" ></div>
+                </div>
+                <label for="vids" class="add-widget add-widget-dim " >
+                    +
+                </label>
+                <input  accept="video/*" style="display: none;" id="vids" type="file"  />
+            </div>
+            <div class="right-bar" >
+                <a href="./videos.html" class="video-icon" >
+                     <img src="../assets/video.png" alt=""> 
+                     <span class="a-dot" ></span>
+                    <p style="opacity: 1;" >videos</p>
+
+                </a>
+                <a href="./music.html" class="audio-icon" > 
+                    <img src="../assets/music.png" alt=""> 
+                    <p>audios</p>
+                </a>
+                <a href="./images.html" class="image-icon" > 
+                    <img src="../assets/picture.png" alt="">
+                    <p>images</p>
+                </a>
+                <a href="./others.html" class="others-icon" > 
+                    <img src="../assets/file.png" alt="">
+                    <p>other files</p>
+                </a>
+                <a href="./settings.html" class="settings-icon" > 
+                    <img src="../assets/settings.png" alt="">
+                    <p>settings</p>
+                </a>
+            </div>
+         </div>
+         <footer >
+            <div><p>10 hidden items</p></div>
+            <div>  <p>copyrights 2022</p> </div>
+            <div> <p>200mbs used</p> </div>
+         </footer>
+      <script src="../scripts/videos.js" ></script>
+</body>
+</html>

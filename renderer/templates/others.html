@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/others.css">
+<title>hidden videos</title>
+    
+</head>
+<body>
+   
+    <nav class="frame" >
+        <div onclick="minimize()" class="minimize" >
+            <div></div>
+        </div>
+        <div onclick="maximize()" class="maximize" >
+            <div class="box1" ></div>
+        </div>
+        <div onclick="close()" class="close" >
+            <section>
+            <div class="line1" ></div>
+            <div class="line2" ></div>
+            </section>
+        </div>
+      </nav>
+
+         <div class="main-container" >
+            <div class="left-bar" >
+                <label for="vids" class="add-widget add-widget-dim " >
+                    +
+                </label>
+                <input style="display: none;" id="vids" type="file"  />
+            </div>
+            <div class="right-bar" >
+                <a href="./videos.html" class="video-icon" >
+                     <img src="../assets/video.png" alt=""> 
+                     
+                    <p>videos</p>
+
+                </a>
+                <a href="./music.html" class="audio-icon" > 
+                    <img src="../assets/music.png" alt=""> 
+                    <p>audios</p>
+                </a>
+                <a href="./images.html" class="image-icon" > 
+                    <img src="../assets/picture.png" alt="">
+                    <p>images</p>
+                </a>
+                <a href="./others.html" class="others-icon" > 
+                    <img src="../assets/file.png" alt="">
+                    <span class="a-dot" ></span>
+                    <p style="opacity: 1;" >other files</p>
+                </a>
+                <a href="./settings.html" class="settings-icon" > 
+                    <img src="../assets/play.png" alt="">
+                    <p>settings</p>
+                </a>
+            </div>
+         </div>
+         <footer >
+            <div><p>10 hidden items</p></div>
+            <div>  <p>copyrights 2022</p> </div>
+            <div> <p>200mbs used</p> </div>
+         </footer>
+      <script src="../scripts/others.js" ></script>
+</body>
+</html>

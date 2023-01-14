@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+    /* FRAME */
+body{
+    background:linear-gradient(90deg,rgba(8, 10, 40, 0.8) 0% ,rgba(2, 2, 13,0.9) 30%, rgba(2, 2, 13,0.9) 50%,rgba(2, 2, 13,0.7888) 100%);
+    height: 100vh;
+    width: 100vw;
+} 
+.frame{
+    height: 30px;
+    width: 100vw;
+    display: flex;
+    justify-content: right;
+    margin-top: 8px;
+    padding: 0 7px;
+    background-color: transparent;
+}
+.frame div.minimize,div.maximize,div.close {
+    width: 50px;
+    cursor: pointer;
+    background-color: transparent;
+}
+.frame div.minimize{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.frame div.minimize:hover{
+background: linear-gradient(90deg,rgba(98, 98, 117, 0.6) 0%, rgba(5, 5, 20, 0.8) 50% , rgba(21, 21, 43, 0.7) 100%);
+border-radius: 3px;
+}
+.frame div.minimize div{
+    width: 35%;
+    height: 2px;
+    background-color: white;
+    
+}
+div.maximize {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div.maximize .box1 {
+    height: 12px;
+    width: 12px;
+    background-color: transparent;
+    border: 1.7px white solid;
+}
+div.maximize:hover{
+    background: linear-gradient(90deg,rgba(98, 98, 117, 0.6) 0%, rgba(5, 5, 20, 0.8) 50% , rgba(21, 21, 43, 0.7) 100%);
+border-radius: 3px;
+}
+div.close{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div.close section{
+    width: 100%;
+    height: 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+div.close section div{
+    height: 100%;
+    width: 2px;
+    background-color: white;
+}
+div.close section .line1{
+    transform: rotateZ(55deg);
+}
+div.close section .line2{
+    transform: rotateZ(-55deg);
+}
+div.close:hover{
+    background: linear-gradient(90deg,rgba(180, 55, 48, 0.6) 0%, rgba(233, 17, 17, 0.8) 50% , rgba(105, 3, 3, 0.7) 100%);
+    border-radius: 3px;
+}
+      /* CONTENTS */
+.calculator-wrapper{
+    height: calc(100vh - 39px) ;
+    width: 100vw;
+}
+.display-area{
+    width: 100vw;
+    height: 30%;
+}
+
+.expressions-area{
+    width: 100vw;
+    height: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.expressions-area p{
+height: 100%;
+min-width: 50px;
+max-width: auto;
+font-size: 37px;
+color: white;
+font-weight: 600;
+font-family: sans-serif;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 0 7px;
+}
+
+.answer-area{
+    width: 100vw;
+    height: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.answer-area p{
+    height: 100%;
+    min-width: 50px;
+    max-width: auto;
+    font-size: 37px;
+    color: white;
+    font-weight: 600;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 7px;
+}
+
+.buttons-area{
+    width: 100vw;
+    height: 70%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,1fr);
+}
+.buttons-area button{
+background: transparent;
+color: rgb(186, 183, 183);
+font-size: 25px;
+font-weight: 800px;
+border: 1px rgb(69, 68, 68) solid;
+}
+.buttons-area button:active{
+    border: none;
+    transform: none;
+    background: rgba(23, 25, 47, 0.8);
+    color: white;
+}
+.buttons-area #equals{
+    grid-column: 2/4;
+}
